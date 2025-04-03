@@ -8,83 +8,7 @@
 	},
 	"item": [
 		{
-			"name": "GetAllProds w Token",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"auth": {
-					"type": "bearer",
-					"bearer": [
-						{
-							"key": "token",
-							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJob2xhQGdtYWlsLmNvbSIsImVtYWlsIjoiaG9sYUBnbWFpbC5jb20iLCJqdGkiOiI3ZGQyOGU3Zi04OGU5LTQ0OGEtOTg2NS1kZjMzM2UxNmRkYTIiLCJuYmYiOjE3NDA2Njg0OTAsImV4cCI6MTc0MDY2OTY5MCwiaWF0IjoxNzQwNjY4NDkwfQ.nVm6yNcsbO_onyTQQFc62FVwIrqsjUcYgm2_5lNTsOU",
-							"type": "string"
-						}
-					]
-				},
-				"method": "GET",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "http://localhost:5212/api/Token/Products",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "5212",
-					"path": [
-						"api",
-						"Token",
-						"Products"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "GetAllProds Copy",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n\r\n    \"Email\": \"hola@gmail.com\",\r\n    \"Password\": \"Hola123*\"\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "http://localhost:5212/Identity/Account/Login",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "5212",
-					"path": [
-						"Identity",
-						"Account",
-						"Login"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "GetAllProds Copy",
+			"name": "GetAllProds",
 			"request": {
 				"method": "GET",
 				"header": [],
@@ -183,56 +107,6 @@
 			},
 			"response": []
 		},
-		{
-			"name": "Delete Multiple",
-			"request": {
-				"method": "DELETE",
-				"header": [],
-				"url": {
-					"raw": "http://localhost:5215/api/Products/5",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "5215",
-					"path": [
-						"api",
-						"Products",
-						"5"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Login Token",
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n    \"Email\": \"hola@gmail.com\",\r\n    \"Password\": \"Hola123*\"\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "http://localhost:5212/api/Token/Login",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "5212",
-					"path": [
-						"api",
-						"Token",
-						"Login"
-					]
-				}
-			},
-			"response": []
-		}
+		
 	]
 }
