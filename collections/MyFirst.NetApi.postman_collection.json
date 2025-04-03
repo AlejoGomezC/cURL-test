@@ -1,0 +1,238 @@
+{
+	"info": {
+		"_postman_id": "6542b46c-31ef-464c-8e0a-635db7fc7346",
+		"name": "MyFirst.NetApi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "42342469",
+		"_collection_link": "https://solar-escape-666331.postman.co/workspace/Team-Workspace~8070b039-20b3-436c-85da-3959735d4647/collection/42342469-6542b46c-31ef-464c-8e0a-635db7fc7346?action=share&source=collection_link&creator=42342469"
+	},
+	"item": [
+		{
+			"name": "GetAllProds w Token",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJob2xhQGdtYWlsLmNvbSIsImVtYWlsIjoiaG9sYUBnbWFpbC5jb20iLCJqdGkiOiI3ZGQyOGU3Zi04OGU5LTQ0OGEtOTg2NS1kZjMzM2UxNmRkYTIiLCJuYmYiOjE3NDA2Njg0OTAsImV4cCI6MTc0MDY2OTY5MCwiaWF0IjoxNzQwNjY4NDkwfQ.nVm6yNcsbO_onyTQQFc62FVwIrqsjUcYgm2_5lNTsOU",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5212/api/Token/Products",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5212",
+					"path": [
+						"api",
+						"Token",
+						"Products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetAllProds Copy",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n    \"Email\": \"hola@gmail.com\",\r\n    \"Password\": \"Hola123*\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5212/Identity/Account/Login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5212",
+					"path": [
+						"Identity",
+						"Account",
+						"Login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetAllProds Copy",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5215/api/Products",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5215",
+					"path": [
+						"api",
+						"Products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PostProd",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"string\",\r\n  \"sku\": 0,\r\n  \"description\": \"string\",\r\n  \"categoryId\": 0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5215/api/Products",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5215",
+					"path": [
+						"api",
+						"Products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Product",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 5,\r\n    \"description\": \"maluma\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5215/api/Products/5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5215",
+					"path": [
+						"api",
+						"Products",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete One Product",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5215/api/Products/5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5215",
+					"path": [
+						"api",
+						"Products",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Multiple",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5215/api/Products/5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5215",
+					"path": [
+						"api",
+						"Products",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login Token",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Email\": \"hola@gmail.com\",\r\n    \"Password\": \"Hola123*\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5212/api/Token/Login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5212",
+					"path": [
+						"api",
+						"Token",
+						"Login"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
